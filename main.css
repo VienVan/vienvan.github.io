@@ -65,11 +65,18 @@ a#mail {
   background: #FBDC93;
 }
 
-@media (max-width: 400px) {
+@media (min-width: 414px) {
   .awesome-guy {
     font-size: 7em;
   }
   .title {
     font-size: 4em;
+  }
+  img#perseus-img {
+    width: 100%;
+  }
+
+  img#dreamcatcher-img {
+    width: 100%;
   }
 }
