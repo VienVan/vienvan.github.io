@@ -14,12 +14,22 @@ body {
 }
 
 img#perseus-img {
-  width: 60% !important;
+  width: 50% !important;
 }
 
 img#dreamcatcher-img {
-  width: 60% !important;
-  margin-left: 40%;
+  width: 50% !important;
+  margin-left: 50%;
+}
+
+img#vanhouston-img {
+  width: 50% !important;
+
+}
+
+img#text-twist-img {
+  width: 50% !important;
+  margin-left: 50%;
 }
 
 .description {
