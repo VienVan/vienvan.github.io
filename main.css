@@ -61,7 +61,7 @@ img#dreamcatcher-img {
   box-shadow: none !important;
 }
 a#github {
-  background: #F4B31F !important;
+  background: #F4B31F;
 }
 
 a#twitter {
@@ -74,4 +74,8 @@ a#instagram {
 
 a#mail {
   background: #FBDC93;
+}
+
+.btn-floating:hover {
+  background: grey !important;
 }
