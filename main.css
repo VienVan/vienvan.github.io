@@ -3,6 +3,16 @@ body {
   color: white;
   font-family: helvetica;
 }
+.wrapper {
+  margin-left: 5%;
+}
+#ballerina {
+  width: 20%;
+  position: fixed;
+  top: -5px;
+  right: 24px;
+}
+
 img#perseus-img {
   width: 60% !important;
 }
@@ -16,7 +26,8 @@ img#dreamcatcher-img {
   float: right;
 }
 .header {
-  height: 700px;
+  margin-top: -48px;
+  height: 800px;
   width: 100%;
 }
 .awesome-guy {
