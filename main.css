@@ -105,4 +105,14 @@ a#nav {
       .title {
         font-size: 4em;
       }
+      #nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      #ballerina {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
