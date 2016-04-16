@@ -1,0 +1,75 @@
+body {
+  background: black;
+  color: white;
+  font-family: helvetica;
+}
+img#perseus-img {
+  width: 60% !important;
+}
+
+img#dreamcatcher-img {
+  width: 60% !important;
+  margin-left: 40%;
+}
+
+.description {
+  float: right;
+}
+.header {
+  height: 700px;
+  width: 100%;
+}
+.awesome-guy {
+  font-size: 15em;
+}
+.title {
+  font-size: 5em;
+}
+
+#perseus {
+  background: #F4B31F;
+  padding: 30px;
+}
+
+#vanhouston {
+  background: #FBDC93;
+    padding: 30px;
+}
+
+#text-twist {
+  background: #219581;
+    padding: 30px;
+}
+
+#dreamcatcher {
+  background: #96D7C4;
+    padding: 30px;
+}
+.card {
+  margin: 5px !important;
+  box-shadow: none !important;
+}
+a#github {
+  background: #F4B31F !important;
+}
+
+a#twitter {
+  background: #96D7C4;
+}
+
+a#instagram {
+  background: #219581;
+}
+
+a#mail {
+  background: #FBDC93;
+}
+
+@media (max-width: 400px) {
+  .awesome-guy {
+    font-size: 7em;
+  }
+  .title {
+    font-size: 4em;
+  }
+}
