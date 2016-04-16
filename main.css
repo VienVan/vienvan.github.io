@@ -1,7 +1,7 @@
 body {
   background: black;
   color: white;
-  font-family: helvetica;
+  font-family: Inconsolata;
 }
 .wrapper {
   margin-left: 5%;
@@ -9,7 +9,7 @@ body {
 #ballerina {
   width: 20%;
   position: fixed;
-  top: -5px;
+  top: 15px;
   right: 24px;
 }
 
@@ -31,10 +31,10 @@ img#dreamcatcher-img {
   width: 100%;
 }
 .awesome-guy {
-  font-size: 15em;
+  font-size: 12em;
 }
 .title {
-  font-size: 5em;
+  font-size: 4em;
 }
 
 #perseus {
