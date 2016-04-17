@@ -47,7 +47,10 @@ img#text-twist-img {
   width: 100%;
   text-align: center;
 }
-
+.technologies p {
+  color: black;
+  font-weight: bolder;
+}
 .awesome-guy {
   font-size: 12em;
 }
