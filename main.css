@@ -2,15 +2,15 @@ body {
   background: black;
   color: white;
   font-family: Inconsolata;
+  text-align: center;
+}
+img {
+  margin-top: 10px;
 }
 img:hover {
   opacity: .5;
 }
-.nav {
-  position: fixed;
-  top: 5%;
-  right: 20;
-}
+
 .fa-github {
   font-size: 50px;
   color: #96D7C4;
@@ -33,7 +33,8 @@ img#vanhouston-img {
 .technologies {
   /*padding-top: 5%;*/
   width: 50% !important;
-  text-align: center;
+  /*text-align: center;*/
+  padding: 10px;
 }
 
 .float-right {
@@ -52,8 +53,9 @@ img#text-twist-img {
   position: relative;
   height: 800px;
   width: 100%;
-  padding-top: 150px;
-  text-align: center;
+  padding-top: 50px;
+  /*text-align: right;*/
+  padding-right: 10px;
 }
 
 .technologies p {
@@ -126,6 +128,22 @@ a#mail {
 .col:hover {
   box-shadow: inset 4px 4px 50px black !important;
 }
+
+
+.bounce {
+  position:relative;
+  font-size: 150px;
+  color: #FBDC93;
+  -webkit-animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:20px; }
+  50%      { bottom:25px; }
+  100%     {bottom:0;}
+}
+
 @media only screen
     and (min-device-width: 320px)
     and (max-device-width: 480px)
@@ -162,6 +180,14 @@ a#mail {
       }
       .float-right {
         float: none;
+      }
+      .nav {
+        position: fixed !important;
+        top: 0;
+        right: 20px;
+      }
+      .header {
+        padding-top: 200px;
       }
       .mobile-nav > a {
         box-shadow: 0 0 40px black;
