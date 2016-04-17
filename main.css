@@ -2,9 +2,18 @@ body {
   background: black;
   color: white;
   font-family: Inconsolata;
-  /*text-align: center;*/
+}
+img:hover {
+  opacity: .5;
 }
 
+.fa-github {
+  font-size: 50px;
+  color: #96D7C4;
+}
+.fa-github:hover {
+  color: grey;
+}
 img#perseus-img {
   width: 50% !important;
 }
@@ -18,8 +27,9 @@ img#vanhouston-img {
   width: 50% !important;
 }
 .technologies {
-  padding-top: 5%;
+  /*padding-top: 5%;*/
   width: 50% !important;
+  text-align: center;
 }
 
 .float-right {
@@ -40,9 +50,10 @@ img#text-twist-img {
   width: 100%;
   text-align: center;
 }
+
 .technologies p {
-  color: black;
   font-weight: bolder;
+  font-size: 20px;
 }
 .awesome-guy {
   font-size: 12em;
@@ -52,23 +63,27 @@ img#text-twist-img {
   font-size: 4em;
 }
 
+.card {
+  background: transparent !important;
+}
 #perseus {
-  background: #F4B31F;
+  /*background: #F4B31F;*/
+  /*background: transparent;*/
   padding: 30px;
 }
 
 #vanhouston {
-  background: #FBDC93;
+  /*background: #FBDC93;*/
   padding: 30px;
 }
 
 #text-twist {
-  background: #219581;
+  /*background: #219581;*/
     padding: 30px;
 }
 
 #dreamcatcher {
-  background: #96D7C4;
+  /*background: #96D7C4;*/
     padding: 30px;
 }
 .card {
