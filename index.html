@@ -15,54 +15,48 @@
   </head>
 
   <body>
-<img src="ballerina.svg" id="ballerina" alt="ballerina">
+<!-- <img src="ballerina.svg" id="ballerina" alt="ballerina"> -->
     <div class='container wrapper'>
       <div class="header">
-        <span class='awesome-guy'>vien van</span><br/>
-        <span class="title">full stack web developer<br> with a passion for design</span>
-
+        <span class='awesome-guy flow-text'>vien van</span><br/>
+        <span class="title flow-text">full stack <span class='developer'>web developer</span><br> with a passion for design</span>
+        <h4 class='flow-text'>i also go on scavenger hunts with <span class='raptor'>concert raptors</span></h4>
       </div>
 
       <div class='row'>
-        <div class='col l12 m12 s12'>
-          <div class="card">
-            <div class="card-image" id="perseus">
-              <a href="https://gaze-perseus.herokuapp.com"><img src="perseus-01.png"  id="perseus-img" alt="Perseus"></a>
+        <div class='col l12 m12 s12 card' id="perseus">
+            <a href="https://gaze-perseus.herokuapp.com"><img src="perseus-01.png"  id="perseus-img" alt="Perseus"></a>
+            <div class="technologies float-right">
+              <p>Perseus is a crowd-sourcing platform to help users discover the ideal places to watch constellations and meteor showers based on their location.</p>
+              <p>Technologies: mongoDB, Express.js, Angular.js, Node.js, Leaflet.js, Mapbox.js</p>
             </div>
+        </div>
+        <div class='col l12 m12 s12 card' id="dreamcatcher">
 
-          </div>
-        </div>
-        <div class='col l12 m12 s12'>
-          <div class="card">
-            <div class="card-image" id="dreamcatcher">
-              <img src="dreamcatcher-01.png" id='dreamcatcher-img' alt="Dream Catcher">
+            <a href="https://catch-your-dreams.herokuapp.com"><img src="dreamcatcher-01.png" id='dreamcatcher-img' alt="Dream Catcher"></a>
+            <div class="technologies float-left">
+              <p>Dream Catcher is a full CRUD app aimed to help users log and monitor their dreams with an engaging and visually appealing timeline.</p>
+              <p>Technologies: mongoDB, Express.js, Node.js, Bootstrap</p>
             </div>
-            <!-- <div class="card-content">
-              <p>Dream Catcher</p>
-            </div> -->
-          </div>
         </div>
-        <div class='col l12 12 s12'>
-          <div class="card">
-            <div class="card-image" id="vanhouston">
-              <img src="vanhouston-01.png"  id="vanhouston-img" alt="Van Houston Academy">
+        <div class='col l12 12 s12 card' id="vanhouston">
+            <a href="https://van-houston.herokuapp.com"><img src="vanhouston-01.png"  id="vanhouston-img" alt="Van Houston Academy"></a>
+            <div class="technologies float-right">
+              <p>Van Houston Academy is an innovative after school program modeled after the methodologies at Stanford University.</p>
+              <p>Technologies: Ruby on Rails, Bootstrap</p>
             </div>
-
-          </div>
         </div>
-        <div class='col l12 m12 s12'>
-          <div class="card">
-            <div class="card-image" id="text-twist">
-              <img src="textwist-01.png"  id="text-twist-img" alt="Text Twist">
+        <div class='col l12 m12 s12 card' id="text-twist">
+            <a href="http://curator-chipmunk-51555.bitballoon.com/"><img src="textwist-01.png"  id="text-twist-img" alt="Text Twist"></a>
+            <div class="technologies float-left">
+              <p>Text Twister models after the popular Flash Game "Text Twist."</p>
+              <p>Technologies: JavaScript, jQuery</p>
             </div>
-
-          </div>
         </div>
-      </div>
 
     </div>
 
-    <div class="fixed-action-btn vertical" style="top: 90px; right: 235px;">
+    <div class="fixed-action-btn vertical" style="bottom: 60px; right: 60px;">
 
       <a class="btn-floating btn-large" id='nav'>
         <i class="large material-icons">view_headline</i>
@@ -76,7 +70,6 @@
         <li><a class="btn-floating btn-large green darken-3" href="https://www.linkedin.com/in/vienVan"><i class="fa fa-linkedin"></i></a></li>
       </ul>
     </div>
-    <a href="https://www.facebook.com/groups/concertraptor/"><img src="raptor-01.svg" id="raptor" alt="concert-raptor"></a>
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

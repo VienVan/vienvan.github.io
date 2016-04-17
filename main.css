@@ -2,10 +2,9 @@ body {
   background: black;
   color: white;
   font-family: Inconsolata;
+  /*text-align: center;*/
 }
-.wrapper {
-  margin-left: 5%;
-}
+
 #ballerina {
   width: 20%;
   position: fixed;
@@ -19,26 +18,34 @@ img#perseus-img {
 
 img#dreamcatcher-img {
   width: 50% !important;
-  margin-left: 50%;
+  float: right;
 }
 
 img#vanhouston-img {
   width: 50% !important;
+}
+.technologies {
+  padding-top: 5%;
+  width: 50% !important;
+}
 
+.float-right {
+  float: right;
 }
 
 img#text-twist-img {
   width: 50% !important;
-  margin-left: 50%;
-}
-
-.description {
   float: right;
 }
+
+.float-left {
+  float: left;
+}
 .header {
-  margin-top: -48px;
+  position: relative;
   height: 800px;
   width: 100%;
+  text-align: right;
 }
 .awesome-guy {
   font-size: 12em;
@@ -54,7 +61,7 @@ img#text-twist-img {
 
 #vanhouston {
   background: #FBDC93;
-    padding: 30px;
+  padding: 30px;
 }
 
 #text-twist {
@@ -94,11 +101,16 @@ a#nav {
   background: #EDB2A4;
 }
 
-#raptor {
-  width: 30%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.raptor {
+  color: #96D7C4;
+}
+
+.developer {
+  color: #F4B31F;
+}
+
+.col:hover {
+  box-shadow: inset 4px 4px 50px black !important;
 }
 @media only screen
     and (min-device-width: 320px)
