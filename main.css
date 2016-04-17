@@ -6,7 +6,11 @@ body {
 img:hover {
   opacity: .5;
 }
-
+.nav {
+  position: fixed;
+  top: 5%;
+  right: 20;
+}
 .fa-github {
   font-size: 50px;
   color: #96D7C4;
@@ -48,6 +52,7 @@ img#text-twist-img {
   position: relative;
   height: 800px;
   width: 100%;
+  padding-top: 150px;
   text-align: center;
 }
 
@@ -157,5 +162,9 @@ a#mail {
       }
       .float-right {
         float: none;
+      }
+      .mobile-nav {
+        background: black;
+        height: 100%;
       }
     }
