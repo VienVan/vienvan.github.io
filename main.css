@@ -20,6 +20,14 @@ img:hover {
   width: 50%;
   transform: rotate(-300deg);
 }
+
+#credit {
+  color: #F4C0B3;
+}
+
+#credit:hover {
+  color: #96D7C4;
+}
 #sleeping-boy:hover {
   opacity: 1;
 }
@@ -138,6 +146,9 @@ a#mail {
 .raptor {
   color: #96D7C4;
 }
+.raptor:hover {
+  color: #F4C0B3;
+}
 
 .developer {
   color: #F4B31F;
@@ -151,7 +162,7 @@ a#mail {
 .bounce {
   position:relative;
   font-size: 150px;
-  color: #FBDC93;
+  color: #F4C0B3;
   -webkit-animation:bounce 1s infinite;
 }
 
