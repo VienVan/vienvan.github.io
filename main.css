@@ -85,8 +85,11 @@ img#text-twist-img {
   height: 800px;
   width: 100%;
   padding-top: 50px;
-  /*text-align: right;*/
+  /*text-align: justify;*/
   padding-right: 10px;
+}
+#design {
+  letter-spacing: 13px;
 }
 
 .technologies p {
