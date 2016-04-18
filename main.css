@@ -1,3 +1,7 @@
+@font-face {
+font-family: Bebas Neue;
+src: url("bebas-neue/BebasNeue Light.otf") format("opentype");
+}
 body {
   background: black;
   color: white;
@@ -97,7 +101,7 @@ img#text-twist-img {
   border-top: 1px dashed white;
 }
 .card {
-  background: white !important;
+  background: transparent !important;
   border-bottom: 1px solid white;
 }
 #perseus {
