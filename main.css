@@ -102,7 +102,7 @@ img#text-twist-img {
   border-top: 1px dashed white;
 }
 .card {
-  background: white !important;
+  background: transparent !important;
   border-bottom: 1px solid white;
 }
 #perseus {
