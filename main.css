@@ -88,8 +88,10 @@ img#text-twist-img {
   /*text-align: justify;*/
   padding-right: 10px;
 }
+
 #design {
-  letter-spacing: 13px;
+  letter-spacing: 12.5px;
+  margin-left: 8px !important;
 }
 
 .technologies p {
@@ -99,10 +101,12 @@ img#text-twist-img {
 }
 .awesome-guy {
   font-size: 12em;
+  border-bottom: 1px solid white;
 }
 
 .title {
-  font-size: 4em;
+  font-size: 3em;
+  letter-spacing: 2px;
 }
 .row {
   border-top: 1px dashed white;
