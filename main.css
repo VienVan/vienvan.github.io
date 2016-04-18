@@ -175,7 +175,10 @@ a#mail {
   color: #96D7C4;
   -webkit-animation:bounce 1s infinite;
 }
-
+.bounce:hover {
+  color: #F4C0B3;
+  cursor: pointer;
+}
 @-webkit-keyframes bounce {
   0%       { bottom:5px; }
   25%, 75% { bottom:20px; }
