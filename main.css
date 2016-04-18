@@ -89,7 +89,7 @@ img#text-twist-img {
 .technologies p {
   font-weight: bolder;
   font-size: 20px;
-  color: black;
+  /*color: black;*/
 }
 .awesome-guy {
   font-size: 12em;
@@ -104,7 +104,11 @@ img#text-twist-img {
 .card {
   background: transparent !important;
   border-bottom: 1px solid white;
+  padding: 30px;
+  margin: 5px !important;
+  box-shadow: none !important;
 }
+
 #perseus {
   /*background: #F4B31F;*/
   /*background: transparent;*/
@@ -125,10 +129,7 @@ img#text-twist-img {
   /*background: #96D7C4;*/
     padding: 30px;
 }
-.card {
-  margin: 5px !important;
-  box-shadow: none !important;
-}
+
 a#github {
   background: #F4B31F;
 }
