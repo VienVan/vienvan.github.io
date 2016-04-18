@@ -13,6 +13,8 @@ $('#sleeping-boy').click(function() {
 $(window).resize(function () {
     var viewportWidth = $(window).width();
     if (viewportWidth < 600) {
-            $(".nav").addClass("horizontal");
+        $(".nav").addClass("horizontal");
+        $(".nav").addClass("click-to-toggle");
+
     }
 });
