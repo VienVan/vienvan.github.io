@@ -10,7 +10,19 @@ img {
 img:hover {
   opacity: .5;
 }
+/*.easter-egg {
+  background: url('https://images.unsplash.com/photo-1459111701074-c0ee7842cccb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=b4ff177cd41143657a99f4cacfb8a9fe');
+  background-size: cover;
+  background-repeat: none;
+}*/
 
+#sleeping-boy {
+  width: 50%;
+  transform: rotate(-300deg);
+}
+#sleeping-boy:hover {
+  opacity: 1;
+}
 .fa-github {
   font-size: 50px;
   color: #96D7C4;
@@ -69,9 +81,12 @@ img#text-twist-img {
 .title {
   font-size: 4em;
 }
-
+.row {
+  border-top: 1px dashed white;
+}
 .card {
   background: transparent !important;
+  border-bottom: 1px solid white;
 }
 #perseus {
   /*background: #F4B31F;*/
