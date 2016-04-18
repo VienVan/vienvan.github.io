@@ -296,4 +296,10 @@ a#mail {
       .mobile-nav > a {
         box-shadow: 0 0 40px black;
       }
+      #sleeping-boy {
+        width: 20%;
+        margin-top: -100px;
+        margin-left: 100px;
+        margin-bottom: 40px;
+      }
     }
