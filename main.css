@@ -162,7 +162,7 @@ a#mail {
   100%     {bottom:0;}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
   .header {
     padding-top: 200px;
