@@ -162,7 +162,45 @@ a#mail {
   100%     {bottom:0;}
 }
 
-@media only screen
+@media (max-width: 900px) {
+
+  .header {
+    padding-top: 200px;
+  }
+  img#perseus-img {
+    width: 100% !important;
+  }
+
+  img#dreamcatcher-img {
+    width: 100% !important;
+  }
+
+  img#vanhouston-img {
+    width: 100% !important;
+  }
+
+  img#text-twist-img {
+    width: 100% !important;
+  }
+  .awesome-guy {
+    font-size: 6em;
+  }
+  .title {
+    font-size: 3em;
+  }
+  .technologies {
+    width: 100% !important;
+    text-align: center;
+  }
+  .float-left {
+    float: none;
+  }
+  .float-right {
+    float: none;
+  }
+}
+
+@media all
     and (min-device-width: 320px)
     and (max-device-width: 480px)
     and (-webkit-min-device-pixel-ratio: 2)
