@@ -21,7 +21,7 @@ img:hover {
 }*/
 
 #sleeping-boy {
-  width: 50%;
+  width: 25%;
   transform: rotate(-300deg);
 }
 
@@ -44,7 +44,7 @@ img:hover {
   color: #96D7C4;
 }
 .fa-github:hover {
-  color: grey;
+  color: #F4C0B3;
 }
 img#perseus-img {
   width: 50% !important;
