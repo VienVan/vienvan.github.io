@@ -9,3 +9,10 @@ $('.fa-sort-down').click(function() {
 $('#sleeping-boy').click(function() {
    $("html, body").animate({ scrollTop: 0 }, 1200);
 })
+
+$(window).resize(function () {
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 600) {
+            $(".nav").addClass("horizontal");
+    }
+});
