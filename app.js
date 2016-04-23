@@ -15,6 +15,9 @@ $(window).resize(function () {
     if (viewportWidth < 600) {
         $(".nav").addClass("horizontal");
         $(".nav").addClass("click-to-toggle");
+    } else {
+      $('.nav').removeClass('horizontal');
+      $('.nav').removeClass('click-to-toggle');
 
     }
 });
