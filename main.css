@@ -20,7 +20,7 @@ img:hover {
   background-repeat: none;
 }*/
 .hidden {
-  display: none;
+  display: none !important;
 }
 #sleeping-boy {
   width: 20%;
