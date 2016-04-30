@@ -19,7 +19,9 @@ img:hover {
   background-size: cover;
   background-repeat: none;
 }*/
-
+.hidden {
+  display: none;
+}
 #sleeping-boy {
   width: 20%;
   transform: rotate(-300deg);
@@ -298,7 +300,7 @@ a#mail {
       }
       #sleeping-boy {
         width: 20%;
-        margin-top: -50px;  
+        margin-top: -50px;
         margin-left: 100px;
         margin-bottom: 40px;
       }
