@@ -1,0 +1,101 @@
+body {
+  background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url('assets/background-img.jpg');
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label {
+  color: #00afef;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus, .input-field input[type=password]:focus, .input-field input[type=email]:focus {
+  border-bottom: 1px solid #00afef;
+  box-shadow: 0 1px 0 0 #00afef;
+}
+
+/* checkbox color */
+.input-field input[type=checkbox]:checked + label:before {
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #00afef;
+  border-bottom: 2px solid #00afef;
+}
+
+.input-field input[type=checkbox] + label:before {
+  border: 2px solid rgba(0, 175, 239, .35);
+}
+
+.input-field {
+  margin-bottom: -1rem;
+}
+.intro {
+  margin: 12em;
+}
+
+.submit-form {
+  margin: 2em;
+  padding: 2em;
+}
+/* form styles */
+#terms-label {
+  font-size: 1em !important;
+}
+#btn-submit {
+  width: 75%;
+  display: block;
+  margin: 2rem auto 0 auto;
+  background: #00afef;
+}
+
+#btn-facebook {
+  display: block;
+  margin: auto;
+  width: 75%;
+  background: #3b5998;
+}
+
+
+/* logo */
+#truecare-logo {
+  display: block;
+  margin: auto;
+}
+
+h1 {
+  font-family: Ubuntu;
+  font-weight: bold;
+}
+
+h2 {
+  font-family; Ubuntu;
+  font-weight: 300;
+}
+
+
+/* media queries */
+@media (max-width: 800px) {
+  .submit-form {
+    padding: 1.5em;
+    margin: 2em auto;
+  }
+  #terms-label {
+    font-size: .75em !important;
+    text-align: left;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 1.75em;
+  }
+  .intro {
+    margin: 6em 2em;
+  }
+}
+
+@media (max-width: 799px) {
+  .intro {
+    display: none;
+  }
+}
