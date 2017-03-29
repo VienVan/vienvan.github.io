@@ -29,8 +29,8 @@
           components:200, //search box & caption
           events: {
             'onSearchDone': onSearchDone,
-            'onVideoChange': onVideoChange,
-            'onCaptionConsumed': onCaptionConsumed
+            'onVideoChange': onVideoChange
+            // 'onCaptionConsumed': onCaptionConsumed
           }
         });
         // 4. process the query
@@ -54,6 +54,9 @@
 
       // 7. The API will call this method when a caption is consumed.
       function onCaptionConsumed(event){
+        if (++views < 3)
+          widget.replay();
+        else
           if (curTrack < totalTracks)
             widget.next();
       }
