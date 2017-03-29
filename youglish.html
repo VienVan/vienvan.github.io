@@ -26,7 +26,7 @@
       function onYouglishAPIReady(){
         widget = new YG.Widget("widget-1", {
           width: 640,
-          components:9, //search box & caption
+          components:9, 16, 64, //search box & caption
           events: {
             'onSearchDone': onSearchDone,
             'onVideoChange': onVideoChange,
@@ -54,9 +54,6 @@
 
       // 7. The API will call this method when a caption is consumed.
       function onCaptionConsumed(event){
-        if (++views < 3)
-          widget.replay();
-        else
           if (curTrack < totalTracks)
             widget.next();
       }
