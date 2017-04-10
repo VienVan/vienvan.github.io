@@ -41,8 +41,14 @@
 
       // 5. The API will call this method when the search is done
       function onSearchDone(event){
-        if (event.totalResult === 0)   alert("No result found");
-        else totalTracks = event.totalResult;
+        if (event.totalResult === 0)
+        {
+          window.location.href = "vienvan.com/youglish?found_results=false";
+        }
+        else
+        {
+          totalTracks = event.totalResult;
+        }
       }
 
       // 6. The API will call this method when switching to a new video.
