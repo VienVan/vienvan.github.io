@@ -43,10 +43,11 @@
       function onSearchDone(event){
         if (event.totalResult === 0)
         {
-          window.location.href = "/youglish?found_results=false";
+          localStorage.setItem("found_results", "false");
         }
         else
         {
+          localStorage.setItem("found_results", "true");
           totalTracks = event.totalResult;
         }
       }
