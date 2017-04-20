@@ -24,6 +24,7 @@
       var widget;
       function onYouglishAPIReady(){
         widget = new YG.Widget("widget-1", {
+          autostart: 1,
           components:216, //search box & caption
           events: {
             'onSearchDone': onSearchDone,
