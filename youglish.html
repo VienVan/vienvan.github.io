@@ -28,13 +28,15 @@
       var widget;
       function onYouglishAPIReady(){
         widget = new YG.Widget("widget-1", {
-          autostart: 1,
-          components:216, //search box & caption
+          autoStart: 1,
+          components:217, //search box & caption
           events: {
             'onSearchDone': onSearchDone,
             'onVideoChange': onVideoChange
             // 'onCaptionConsumed': onCaptionConsumed
-          }
+          },
+          title: "Watch people pronounce %elsaCheckWord% in English (Video %curTrack% out of %totalTracks%)",
+          client: "app"
         });
         // 4. process the query
         widget.search(elsaCheckWord,"US");
