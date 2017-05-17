@@ -15,7 +15,8 @@
       if(url.indexOf('?') != -1)
       {
         elsaCheckWord = window.location.search.split("?")[1];
-        document.getElementById("word").innerHTML = elsaCheckWord;
+        decodedCheckWord = elsaCheckWord.replace(/%20/g, " ");
+        document.getElementById("word").innerHTML = decodedCheckWord;
       }
       // 2. This code loads the widget API code asynchronously.
       var tag = document.createElement('script');
