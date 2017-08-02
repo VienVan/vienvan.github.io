@@ -28,10 +28,11 @@
       function onYouglishAPIReady(){
         widget = new YG.Widget("widget-1", {
           autoStart: 1,
-          components: 1, //search box, caption, title
+          components: 1024, //search box, caption, title
           events: {
             'onSearchDone': onSearchDone,
-            'onVideoChange': onVideoChange
+            'onVideoChange': onVideoChange,
+
             // 'onCaptionConsumed': onCaptionConsumed
           },
           // title: "Watch people pronounce " + elsaCheckWord + " (Video " + curTrack + " out of " + totalTracks + ")",
@@ -52,33 +53,21 @@
         {
           document.getElementById("found_results").innerHTML = "false";
           localStorage.setItem("found_results", "false");
-          document.getElementById("title").style.display = "None";
         }
         else
         {
           document.getElementById("found_results").innerHTML = "true";
           localStorage.setItem("found_results", "true");
           totalTracks = event.totalResult;
-          // document.getElementById("currentTrack").innerHTML = curTrack + 1;
-          // document.getElementById("totalTracks").innerHTML = totalTracks;
         }
       }
 
       // 6. The API will call this method when switching to a new video.
       function onVideoChange(event){
         curTrack = event.trackNumber;
-        // document.getElementById("currentTrack").innerHTML = curTrack;
         views = 0;
       }
 
-      // 7. The API will call this method when a caption is consumed.
-      function onCaptionConsumed(event){
-        if (++views < 3)
-          widget.replay();
-        else
-          if (curTrack < totalTracks)
-            widget.next();
-      }
     </script>
   </body>
 </html>
