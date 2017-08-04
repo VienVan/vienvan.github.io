@@ -28,7 +28,7 @@
       function onYouglishAPIReady(){
         widget = new YG.Widget("widget-1", {
           autoStart: 1,
-          components: 1024, //search box, caption, title
+          components: 4096, //closable
           events: {
             'onSearchDone': onSearchDone,
             'onVideoChange': onVideoChange,
@@ -59,6 +59,7 @@
           document.getElementById("found_results").innerHTML = "true";
           localStorage.setItem("found_results", "true");
           totalTracks = event.totalResult;
+
         }
       }
 
