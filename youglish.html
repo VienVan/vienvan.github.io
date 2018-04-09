@@ -2,7 +2,7 @@
 <html>
 	<body>
 		<!-- 1. The widget will replace this <div> tag. -->
-		<p style="text-align: center; font-size: 150%;" id="title">Watch people pronounce <strong><span id="word"></span></strong> in English
+		<p style="text-align: center; font-size: 150%;" id="title">Watch people pronounce <strong><span id="word"></span></strong>
 		(Video <span id="currentTrack"></span> of <span id="totalTracks"></span>)
 		</p>
 		<div id="widget-1" style="width: 75% !important; height: 100vh;"></div>
@@ -30,7 +30,6 @@
 			function onYouglishAPIReady(){
 				widget = new YG.Widget("widget-1", {
 					autoStart: 1,
-					width: 1080,
 					components:216, //search box, caption, title
 					events: {
 						'onSearchDone': onSearchDone,
