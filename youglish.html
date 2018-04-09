@@ -5,7 +5,7 @@
 		<p style="text-align: center; font-size: 150%;" id="title">Watch people pronounce <strong><span id="word"></span></strong> in English
 		(Video <span id="currentTrack"></span> of <span id="totalTracks"></span>)
 		</p>
-		<div id="widget-1" style="width: 95%;"></div>
+		<div id="widget-1" style="width: 75% !important; height: 100vh;"></div>
 		<p id="found_results" style="display: none;"></p>
 		<script>
 
@@ -30,7 +30,7 @@
 			function onYouglishAPIReady(){
 				widget = new YG.Widget("widget-1", {
 					autoStart: 1,
-					width: 640,
+					width: 1080,
 					components:216, //search box, caption, title
 					events: {
 						'onSearchDone': onSearchDone,
