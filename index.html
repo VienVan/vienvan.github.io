@@ -8,7 +8,7 @@
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 
     <!--Let browser know website is optimized for mobile-->
@@ -34,14 +34,26 @@
     <div class='container wrapper'>
       <div class="header">
         <h2 class='awesome-guy'>vien van</h2>
-        <h3 class="title"><span class='developer'>FULL STACK WEB DEVELOPER</span><h3>
-          <h4 id='design'>with a passion for design</h4>
-
+        <h3 class="title"><span class='developer'>WEB DEVELOPER</span><h3>
+          <h4 id='design'>dessert</h4>
+          <h4>current company: <a href="elsaspeak.com">elsa speak | ai</a></h4>
         <i class='fa fa-sort-down fa-5x bounce'></i>
       </div>
 
       <div class='row'>
-        <h1 id="projects">Things I've built in the past three months</h1>
+        <h1 id="projects">Things I've built</h1>
+        <div class='col l12 m12 s12 card' id="text-twist">
+          <a href="elsaspeak.com/login">
+            <img src="assets/textwist-01.png" id="text-twist-img" alt="Text Twist">
+          </a>
+          <div class="technologies float-left">
+            <p>Login / Voucher redemption flow</p>
+            <a href="https://github.com/VienVan/Browser-Game-" target="_blank">
+              <i class='fa fa-github fa-2x'></i>
+            </a>
+            <p class='developer'>JavaScript, Django</p>
+          </div>
+        </div>
         <div class='col l12 m12 s12 card' id="perseus">
             <a href="https://gaze-perseus.herokuapp.com"><img src="assets/perseus-01.png"  id="perseus-img" alt="Perseus"></a>
             <div class="technologies float-right">
@@ -51,7 +63,6 @@
             </div>
         </div>
         <div class='col l12 m12 s12 card' id="dreamcatcher">
-
             <a href="https://catch-your-dreams.herokuapp.com"><img src="assets/dreamcatcher-01.png" id='dreamcatcher-img' alt="Dream Catcher"></a>
             <div class="technologies float-left">
               <p>A full CRUD app to help users log and monitor their dreams with a visually appealing timeline.</p>
@@ -59,14 +70,14 @@
               <p class='developer'> mongoDB, Express.js, Node.js, Bootstrap</p>
             </div>
         </div>
-        <div class='col l12 12 s12 card' id="vanhouston">
+        <!-- <div class='col l12 12 s12 card' id="vanhouston">
             <a href="https://van-houston.herokuapp.com"><img src="assets/vanhouston-01.png"  id="vanhouston-img" alt="Van Houston Academy"></a>
             <div class="technologies float-right">
               <p>An innovative after school program modeled after the methodologies at Stanford University.</p>
               <a href="https://github.com/VienVan/Van-Houston-Database" target="_blank"><i class='fa fa-github fa-2x'></i></a>
               <p class='developer'> Ruby on Rails, Bootstrap</p>
             </div>
-        </div>
+        </div> -->
         <div class='col l12 m12 s12 card' id="text-twist">
             <a href="http://curator-chipmunk-51555.bitballoon.com/"><img src="assets/textwist-01.png"  id="text-twist-img" alt="Text Twist"></a>
             <div class="technologies float-left">
@@ -75,14 +86,15 @@
               <p class='developer'> JavaScript, jQuery</p>
             </div>
         </div>
-        <div class='col l12 12 s12 card' id="vanhouston">
+       
+        <!-- <div class='col l12 12 s12 card' id="vanhouston">
             <a href="http://imagebooth.rentals"><img src="assets/imagebooth-01.png"  id="vanhouston-img" alt="Image Booth"></a>
             <div class="technologies float-right">
               <p>Static web page for small business in Houston.</p>
               <a href="https://github.com/VienVan/imagebooth" target="_blank"><i class='fa fa-github fa-2x'></i></a>
               <p class='developer'>HTML5, CSS3 Animations, JavaScript</p>
             </div>
-        </div>
+        </div> -->
 
     </div>
     <div class='easter-egg'>
@@ -94,8 +106,8 @@
 
 
     <a href="http://www.hitwebcounter.com" target="_blank">
-<img src="http://hitwebcounter.com/counter/counter.php?page=6382068&style=0001&nbdigits=3&type=page&initCount=0" title="" Alt=""   border="0" >
-</a>                                        <br/>
+      <img src="http://hitwebcounter.com/counter/counter.php?page=6382068&style=0001&nbdigits=3&type=page&initCount=0" title="" Alt=""   border="0" >
+    </a>                                        <br/>
                                         <!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com" title="Live Stats For Website"
                                         target="_blank" style="font-family: Geneva, Arial, Helvetica, sans-serif;
                                         font-size: 10px; color: #908C86; text-decoration: underline ;"><em>Live Stats For Website                                        </em>
@@ -105,6 +117,6 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
