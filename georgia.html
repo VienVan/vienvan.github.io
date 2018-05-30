@@ -8,7 +8,7 @@
 		<script src="https://d3js.org/d3-color.v1.min.js"></script>
 	</head>
 	<body>
-		<h1 style="text-align: center;"><strong>Georgia Population 2010</strong></h1>
+		<h1 style="text-align: center;"><strong>Georgia Population 2010-2018</strong></h1>
 		<script type="text/javascript">
 
 			//Width and height
@@ -32,7 +32,7 @@
 								//https://github.com/d3/d3-scale-chromatic
 
 			var colorPop = d3.scaleQuantile()
-								.domain([1000, 5000, 10000, 100000, 1200000])
+								.domain([100, 1200000])
 				.range(["rgb(237,248,233)","rgb(186,228,179)","rgb(116,196,118)","rgb(49,163,84)","rgb(0,109,44)"]);
 			//Create SVG element
 			var svg = d3.select("body")
@@ -96,7 +96,6 @@
 						}
 
 					}
-
 					//Bind data and create one path per GeoJSON feature
 					svg.selectAll("path")
 						 .data(json.features)
