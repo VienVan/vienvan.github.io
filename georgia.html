@@ -11,11 +11,16 @@
 		<h1 style="text-align: center;"><strong>Georgia Population 2018</strong></h1>
 		<script type="text/javascript">
 
+
 			//Width and height
 			var w = 1200;
 			var h = 500;
 
 			//Define map projection
+			var tooltip = d3.select("body").append("div")
+									.attr("class", "tooltip")
+									.style("opacity", 0);
+
 			var projection = d3.geoEquirectangular()
 									 .center([44.783333, 41.716667])
 									 .translate([w/2, h/2])
@@ -102,6 +107,26 @@
 						 .enter()
 						 .append("path")
 						 .attr("d", path)
+						 .on('mouseover', d => {
+						 console.log("mouse over", d.properties.NAME_1);
+						 tooltip.transition()
+							 .duration(200)
+							 .style('opacity', .9);
+						// tooltip.text(d.country)
+						 tooltip.html(
+
+							 "<br>Region: " + d.properties.NAME_1 +
+							 "<br>Population: " + d.properties.population
+
+						 )
+							 .style('left', `${d3.event.pageX}px`)
+							 .style('top', `${d3.event.pageY}px`);
+					 })
+					 .on('mouseout', () => {
+						 tooltip.transition()
+							 .duration(400)
+							 .style('opacity', 0);
+					 })
 						 .style("fill", function(d) {
 							 console.log("d", d);
 								 //Get data.population
