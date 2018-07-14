@@ -31,20 +31,16 @@
 				widget = new YG.Widget("widget-1", {
 					autoStart: 1,
 					width: 1080,
-					height: 1000,
+					// height: 1000,
 					components:216, //search box, caption, title
 					events: {
-						'onSearchDone': onSearchDone,
-						'onVideoChange': onVideoChange
-						// 'onCaptionConsumed': onCaptionConsumed
-					},
-					// title: "Watch people pronounce " + elsaCheckWord + " (Video " + curTrack + " out of " + totalTracks + ")",
-					client: "app"
+						"onSearchDone": onSearchDone,
+						"onVideoChange": onVideoChange,
+						"onCaptionConsumed": onCaptionConsumed
+					}
 				});
-				// 4. process the query
-				// var elsaCheckWord =  window.location.search.split("?")[1];
-				// if (elsaCheckWord) YG.getWidget("yg-widget-0").search(elsaCheckWord, "US");
-				widget.search(elsaCheckWord,"US");
+
+				widget.search(elsaCheckWord.toString(), "US")
 			}
 
 
@@ -54,12 +50,14 @@
 			function onSearchDone(event){
 				if (event.totalResult === 0)
 				{
+					console.log("total result,", event.totalResult)
 					document.getElementById("found_results").innerHTML = "false";
 					localStorage.setItem("found_results", "false");
 					document.getElementById("title").style.display = "None";
 				}
 				else
 				{
+					console.log("total result,", event.totalResult)
 					document.getElementById("found_results").innerHTML = "true";
 					localStorage.setItem("found_results", "true");
 					totalTracks = event.totalResult;
