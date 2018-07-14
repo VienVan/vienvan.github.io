@@ -30,8 +30,8 @@
 			function onYouglishAPIReady(){
 				widget = new YG.Widget("widget-1", {
 					autoStart: 1,
-					width: 1080,
-					// height: 1000,
+					width: 1200,
+					height: 800,
 					components:216, //search box, caption, title
 					events: {
 						"onSearchDone": onSearchDone,
@@ -41,6 +41,7 @@
 				});
 
 				widget.search(elsaCheckWord.toString(), "US")
+
 			}
 
 
@@ -48,8 +49,8 @@
 
 			// 5. The API will call this method when the search is done
 			function onSearchDone(event){
-				document.getElementById("fr-widget-1").style.height = "1200px !important";
-				document.getElementById("fr-widget-1").style.width = "1080px !important";
+
+				// document.getElementById("widget-1").style.width = "1080px !important";
 
 				if (event.totalResult === 0)
 				{
