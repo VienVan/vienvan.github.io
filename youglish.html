@@ -30,7 +30,7 @@
 			function onYouglishAPIReady(){
 				widget = new YG.Widget("widget-1", {
 					autoStart: 1,
-					width: 2000,
+					width: 640,
 					// height: 1000,
 					components:216, //search box, caption, title
 					events: {
@@ -48,6 +48,8 @@
 
 			// 5. The API will call this method when the search is done
 			function onSearchDone(event){
+				document.getElementById("widget-1").style.height = "1200px !important";
+
 				if (event.totalResult === 0)
 				{
 					console.log("total result,", event.totalResult)
